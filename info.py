@@ -18,8 +18,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '22257739'))
-API_HASH = environ.get('API_HASH', '52f93755d11e411fa33fe283cdc18a3e')
+API_ID = int(environ.get('API_ID', '7041911'))
+API_HASH = environ.get('API_HASH', 'abab2561c71e3004a55d4ff9763d5383')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 PORT = environ.get("PORT", "8080")
 
@@ -43,7 +43,8 @@ auth_channel = environ.get('AUTH_CHANNEL', '-1002226519917')
 auth_grp = environ.get('AUTH_GROUP', '-1002102214357')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-SUPPORT_CHAT_ID = environ.get('SUPPORT_CHAT_ID', '-1002188337678')
+SUPPORT_CHAT_ID = -1002188337678
+SUPPORTS_CHAT_ID = -1002188337678
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001956199528')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
