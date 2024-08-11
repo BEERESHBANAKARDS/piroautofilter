@@ -43,6 +43,7 @@ auth_channel = environ.get('AUTH_CHANNEL', '-1002226519917')
 auth_grp = environ.get('AUTH_GROUP', '-1002102214357')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
+support_chat_id = environ.get('SUPPORT_CHAT_ID')
 SUPPORT_CHAT_ID = -1002188337678
 SUPPORTS_CHAT_ID = -1002188337678
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001956199528')
