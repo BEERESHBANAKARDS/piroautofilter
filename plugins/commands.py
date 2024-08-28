@@ -141,7 +141,7 @@ async def start(client, message):
                 file_id=file.file_id,
                 caption=f_caption,
                 protect_content=True if pre == 'filep' else False,
-                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖯𝖨𝖱𝖮 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url=f"https://t.me/join_movies_adda") ] ] ),
+                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('ADDA BOT 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ', url=f"https://t.me/adda_bot_updates") ] ] ),
             )
         return
     
@@ -177,7 +177,7 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖯𝖨𝖱𝖮 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url=f"https://t.me/join_movies_adda") ] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('ADDA BOT 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ', url=f"https://t.me/adda_bot_updates") ] ] ),
                     
                 )
             except FloodWait as e:
@@ -188,7 +188,7 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖯𝖨𝖱𝖮 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url=f"https://t.me/join_movies_adda") ] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton(' ADDA BOT 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ', url=f"https://t.me/adda_bot_updates") ] ] ),
                 )
             except Exception as e:
                 logger.warning(e, exc_info=True)
@@ -284,7 +284,7 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖯𝖨𝖱𝖮 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/join_movies_adda") ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('ADDA BOT 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ', url="https://t.me/adda_bot_updates") ] ] ),
     )
                     
 
